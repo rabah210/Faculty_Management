@@ -178,28 +178,16 @@ menu :
     }
     Color(45);
     printf("\n\n\t ** Enter the Choice : \n\n\t[1] Main Menu\t\t[0] Exit\n\t");
-
     scanf(" %d",&ch);
-
     switch(ch)
-
     {
-
     case 1:
-
         goto menu;
-
     case 0:
-
         break;
-
     default:
-
         printf("Invalid choice");
-
         break;
-
     }
-
 }
 
