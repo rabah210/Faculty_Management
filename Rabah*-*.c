@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <conio.h>
-
-
 void Color(int ForgC)
 {
     WORD wColor;
