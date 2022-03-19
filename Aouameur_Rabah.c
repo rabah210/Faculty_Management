@@ -82,7 +82,6 @@ menu :
         Color(0);
         scanf(" %i",&f[counterf].dep);
         Color(45);
-        int section;
         printf("\n   + Give me number of section : ");
         Color(0);
         scanf("%i",&f[counterf].section);
