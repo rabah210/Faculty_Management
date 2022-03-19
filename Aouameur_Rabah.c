@@ -74,7 +74,6 @@ menu :
         fp = fopen("faculte.txt","w");
         Color(45);
         fflush(stdin);
-        fwrite(&fp, sizeof(fp), 1, fp);
         printf("\n   + Give me a name of faculte : ");
         Color(0);
         scanf("%s",&f[counterf].name);
