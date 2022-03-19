@@ -71,9 +71,10 @@ menu :
         system("CLS");
         Color(4);
         puts("\t *-ADD Faculte-* ");
-        fp = fopen("faculte.txt","ab+");
+        fp = fopen("faculte.txt","w");
         Color(45);
         fflush(stdin);
+        fwrite(&fp, sizeof(fp), 1, fp);
         printf("\n   + Give me a name of faculte : ");
         Color(0);
         scanf("%s",&f[counterf].name);
@@ -92,7 +93,6 @@ menu :
             Color(0);
             scanf(" %i",&f[counterf].numstu[j]);
         }
-        fwrite(&fp, sizeof(fp), 1, fp);
         Color(2);
         puts("\n  The faculte is sucessfully added");
         counterf++;
@@ -113,7 +113,7 @@ menu :
         Color(2);
         printf("\n\n\n\t     Name_faculte      \tnumber_departement\tnumber_section\t\tnumber_students \n\t  ===================================================================================================\n\n");
         Color(0);
-        fp=fopen("faculte.txt","r");
+        fp=fopen("faculte.txt","w");
         fflush(stdin);
         int numfaculte;
         for(numfaculte=0; numfaculte<counterf; numfaculte++)
