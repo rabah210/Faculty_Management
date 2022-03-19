@@ -35,7 +35,7 @@ menu :
     {
         system("CLS");
         system("COLOR F0");
-        char welcome[50]= "**** Welcome to Contact Management System ****";
+        char welcome[50]= "**** Welcome to my Management System ****";
         printf("\n\t\t\t\t     ");
         for(j=0; j<50; j++)
         {
@@ -176,9 +176,11 @@ menu :
         puts("\n  The faculte is sucessfully DELETED *-*");
 
     }
+    do {
     Color(45);
     printf("\n\n\t ** Enter the Choice : \n\n\t[1] Main Menu\t\t[0] Exit\n\t");
     scanf(" %d",&ch);
+    }while(ch > 1 || ch < 0);
     switch(ch)
     {
     case 1:
