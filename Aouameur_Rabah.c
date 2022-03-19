@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-#include <conio.h>
+#include <string.h>
 void Color(int ForgC)
 {
     WORD wColor;
@@ -93,7 +93,7 @@ menu :
             scanf(" %i",&f[counterf].numstu[j]);
         }
         fseek(fp,0,SEEK_END);
-        fwrite(f,sizeof(char),strlen(f[counterf]),fp);
+        fwrite(f,sizeof(char),strlen(f),fp);
         Color(2);
         puts("\n  The faculte is sucessfully added");
         counterf++;
@@ -127,7 +127,7 @@ menu :
             }
         }
         fseek(fp,0,SEEK_END);
-        fwrite(f,sizeof(char),strlen(f[counterf]),fp);
+        fwrite(f,sizeof(char),strlen(f),fp);
         Color(2);
         printf("\n\t  ===================================================================================================");
         Color(0);
@@ -157,7 +157,7 @@ menu :
             scanf(" %i",&f[j].numstu[i]);
         }
          fseek(fp,0,SEEK_END);
-        fwrite(f,sizeof(char),strlen(f[counterf]),fp);
+        fwrite(f,sizeof(char),strlen(f),fp);
         Color(2);
         puts("\n  The faculte is sucessfully EDITED *-*");
         break;
@@ -175,6 +175,8 @@ menu :
         {
             f[i] = f[i+1];
         }
+        fseek(fp,0,SEEK_END);
+        fwrite(f,sizeof(char),strlen(f),fp);
         counterf-=1;
         Color(2);
         puts("\n  The faculte is sucessfully DELETED *-*");
