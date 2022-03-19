@@ -159,7 +159,7 @@ menu :
         system("CLS");
         Color(4);
         puts("\t *-DELETE Faculte-* ");
-        fp=fopen("faculte.txt","r");
+        fp=fopen("faculte.txt","w");
         fflush(stdin);
         Color(45);
         printf("    Give me a number the faculte that you will be delete (number in list of faculte) : ");
