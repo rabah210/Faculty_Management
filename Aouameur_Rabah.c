@@ -93,7 +93,7 @@ menu :
             scanf(" %i",&f[counterf].numstu[j]);
         }
         fseek(fp,0,SEEK_END);
-        fwrite(f[counterf],sizeof(char),strlen(f[counterf]),fp);
+        fwrite(f,sizeof(char),strlen(f[counterf]),fp);
         Color(2);
         puts("\n  The faculte is sucessfully added");
         counterf++;
