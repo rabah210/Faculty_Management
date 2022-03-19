@@ -126,6 +126,8 @@ menu :
                 if (j == f[numfaculte].section - 1) printf("\n");
             }
         }
+        fseek(fp,0,SEEK_END);
+        fwrite(f,sizeof(char),strlen(f[counterf]),fp);
         Color(2);
         printf("\n\t  ===================================================================================================");
         Color(0);
@@ -154,6 +156,8 @@ menu :
             printf("\n   + Give me a number of students in %i section : ",i+1);
             scanf(" %i",&f[j].numstu[i]);
         }
+         fseek(fp,0,SEEK_END);
+        fwrite(f,sizeof(char),strlen(f[counterf]),fp);
         Color(2);
         puts("\n  The faculte is sucessfully EDITED *-*");
         break;
