@@ -80,7 +80,7 @@ menu :
         Color(45);
         printf("\n   + Give me number of departement : ");
         Color(0);
-        scanf(" %i",&f[counterf].dep);
+        scanf(" %i",&f[counterf].dep); 
         Color(45);
         printf("\n   + Give me number of section : ");
         Color(0);
