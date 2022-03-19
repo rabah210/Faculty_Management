@@ -35,7 +35,7 @@ menu :
     {
         system("CLS");
         system("COLOR F0");
-        char welcome[50]= "**** Welcome to my Management System ****";
+        char welcome[50]= "**** Welcome to my Management System \"Faculte\" ****";
         printf("\n\t\t\t\t     ");
         for(j=0; j<50; j++)
         {
