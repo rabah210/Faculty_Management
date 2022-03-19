@@ -27,7 +27,7 @@ typedef struct
 } faculte;
 int main ()
 {
-    faculte f[10];
+    faculte f[20];
     int ch,counterf =0,j;
 menu :
     /* ************ Main menu ***********************  */
@@ -92,7 +92,7 @@ menu :
             Color(0);
             scanf(" %i",&f[counterf].numstu[j]);
         }
-        fwrite(&f, sizeof(f), 1, fp);
+        fwrite(&fp, sizeof(fp), 1, fp);
         Color(2);
         puts("\n  The faculte is sucessfully added");
         counterf++;
